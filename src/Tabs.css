@@ -16,16 +16,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #333;
+    background-color: #999;
     padding: 1rem;
     border: 1px solid #aaa;
     width: 100px;
-    color: #aaa;
+    color: #222;
     font-weight: bold;
     cursor: pointer;
+    filter: brightness(1);
 }
 .tab:hover, .tab:focus{
-    background-color: #444;
+   
+    filter: brightness(1.2);
 }
 .tab.active{
     background-color: #fff;
