@@ -1,0 +1,22 @@
+.crypto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: max-content;
+    height: 100%;
+
+}
+
+.crypto button{
+    background-color: rgb(13, 87, 151);
+    border: 1px solid #aaa;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+    filter: brightness(1);
+}

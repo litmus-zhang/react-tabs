@@ -1,0 +1,29 @@
+.FormInput{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    width: 100%;
+}
+label{
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 0.4rem;
+}
+input{
+    border: none;
+    margin: 0;
+    padding: 0.5rem;
+    background-color: #ccc;
+    font-size: 1rem;
+    color: #999;
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+input:active, input:focus{
+    outline: none;
+    border: 2px solid rgb(29, 202, 237);
+    background: transparent;
+    color: #444;
+}

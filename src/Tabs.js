@@ -1,5 +1,7 @@
 import { useState } from 'react'
+import Cryptoform from './components/Cryptoform'
 import './Tabs.css'
+
 
 export default function Tabs()
 {
@@ -13,27 +15,29 @@ export default function Tabs()
       <div className='Tabs'>
           <div className='all-tabs'>
               <div className={tab === 1 ?'tab active': 'tab'} onClick={() => handleTab(1)}>
-              Tab 1 </div>
+                  Crypto
+              </div>
               <div className={tab === 2 ?'tab active': 'tab'} onClick={() => handleTab(2)}>
-                  Tab 2 </div>
+                  Fiat
+              </div>
                   <div className={tab === 3 ?'tab active': 'tab'} onClick={() => handleTab(3)}>
-                  Tab 3 </div>
+                  Giftcard
+              </div>
         </div>
           <div className='all-contents'>
           <div className={tab === 1 ?'content active': 'content'} onClick={() => handleTab(1)} >
                   <div className='content-header'>
-                  <h1>Content 1</h1>
+                  <h1>Crypto</h1>
                   <hr />
                   </div>
                 
-                  <p>
-                  d tortor bibendum. Tempus pharetra aliquet tristique eget cras sit. In nam faucibus nunc tellus, sem risus, tincidunt tempor. Nibh at enim suspendisse eget commodo lorem. Tellus semper neque varius donec.
-Hac diam massa blandit varius cras nulla. Amet penatibus sapien lorem lectus non orci. Elementum, faucibus sociis sit mollis commodo augue tortor sit. Velit lectus curabitur faucibus sed viverra rutrum nulla laoreet neque. Non nulla vulputate ut nulla fringilla. Lectus ut diam massa tristique tellus elementum blandit. Amet, duis enim, sed quisque velit aliquet. Tellus arcu lobortis aliquam et faucibus augue est. Pretium non eu sem non tempus tellus sit ut.
-                  </p>
+                  <form>
+                  <Cryptoform/>
+                  </form>
               </div>
               <div className={tab === 2 ?'content active': 'content'} onClick={() => handleTab(2)} >
               <div className='content-header'>
-                  <h1>Content 2</h1>
+                  <h1>Fiat</h1>
                   <hr />
                   </div>
                   <p>
@@ -43,7 +47,7 @@ Placerat at erat auctor adipiscing diam urna. Eu at malesuada at id nec. Turpis 
               </div>
               <div className={tab === 3 ?'content active': 'content'} onClick={() => handleTab(3)} >
               <div className='content-header'>
-                  <h1>Content 3</h1>
+                  <h1>Giftcard</h1>
                   <hr />
                   </div>
                   <p>
